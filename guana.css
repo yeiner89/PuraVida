@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+/*    background: url(images/OIP.jpg);*/
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      
+  }
+
+.header {
+  
+  align-items: center;
+  position: relative;
+}
+
+.back-button {
+  margin-left: 20px;
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-button a:hover {
+  background-color: #555;
+}
+
+.container
+{
+  width: 1280px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}  
+
+.container .box
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.container .box .imgbox
+{
+  position: relative;
+  overflow: hidden;
+}
+
+.container .box .imgbox img
+{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 2s;
+
+}
+
+.container .box:hover .imgbox img
+{
+  transform: scale(1.2);
+}
+  
+.container .box .details
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgb(255, 255, 255);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+  
+.container .box:hover .details
+{
+  transform: scaleY(1);
+}
+  
+.container .box .details .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.container .box .details .content h2
+{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}  
+  
+.container .box .details .content p
+{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+}
+  
+@media screen and (max-width:1290px) {
+  .container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .box {
+    display: block;
+  }
+}
+  
+  

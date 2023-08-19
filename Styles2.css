@@ -1,0 +1,24 @@
+
+
+/* Center the ul list within the navbar */
+.collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+@media (min-width: 319px) and (max-width:480px){
+  .navbar-toggler{
+    background-color: lightsalmon;
+  }
+  .navbar-nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-end; /* Align items to the left */
+  }
+  .navbar-nav .nav-item {
+    margin: 5px 0; /* Add space between navigation items */
+  }
+  }
+
+
+
