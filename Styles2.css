@@ -1,15 +1,13 @@
 
 
 /* Center the ul list within the navbar */
-.collapse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
+
 
 @media (min-width: 319px) and (max-width:480px){
   .navbar-toggler{
-    background-color: lightsalmon;
+    background-color: rgb(68, 203, 218);
+    height: 70px;
+    width: 70px;
   }
   .navbar-nav {
     flex-direction: column; /* Stack navigation items vertically */
@@ -19,6 +17,30 @@
     margin: 5px 0; /* Add space between navigation items */
 
   } }
+
+  .navbar {
+    flex-direction: fixed;
+    align-items: flex-start;
+    display: fixed-left;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.nav-link {
+    padding-left: 1rem;
+}
+
+
+  
 
 
 
