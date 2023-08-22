@@ -1,4 +1,4 @@
-const apiKey = "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";
+const apiKey = "";
 const apiUrl = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 
 const chatBox = document.getElementById("chat-box");
